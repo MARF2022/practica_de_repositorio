@@ -26,7 +26,11 @@
 					},
 					"dataset": {
 						"referenceName": "AzureSqlTable1_marfdataset",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"tabla": "1",
+							"esquema": "2"
+						}
 					},
 					"firstRowOnly": false
 				}
