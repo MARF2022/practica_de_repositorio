@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "AzureSqlTable1_marfdataset",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ServicioVinculadoSQL",
