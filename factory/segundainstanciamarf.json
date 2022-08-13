@@ -1,0 +1,9 @@
+{
+	"name": "segundainstanciamarf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6beccebc-3e07-4c36-9c7e-81d53111ab94",
+		"tenantId": "54669b5c-85a4-419c-aaef-5ffd0ac6f5f6"
+	}
+}
