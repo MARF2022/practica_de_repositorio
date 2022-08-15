@@ -2,7 +2,7 @@
 	"name": "Parquet1examenMARF",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "EXAMENDataLakeStorageMARF",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
