@@ -6,10 +6,10 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"tabla": {
+			"SistemaDeArchivos": {
 				"type": "string"
 			},
-			"esquema": {
+			"RutaDeArchivos": {
 				"type": "string"
 			}
 		},
