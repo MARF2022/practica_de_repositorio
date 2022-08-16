@@ -45,10 +45,40 @@
 								"sink": {
 									"type": "AzureSqlSink",
 									"writeBehavior": "insert",
-									"sqlWriterUseTableLock": false
+									"sqlWriterUseTableLock": false,
+									"tableOption": "autoCreate",
+									"disableMetricsCollection": false
 								},
-								"enableStaging": false
-							}
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
+								}
+							},
+							"inputs": [
+								{
+									"referenceName": "Parquet1marf",
+									"type": "DatasetReference",
+									"parameters": {
+										"SistemaDeArchivos": "archivosexamen",
+										"RutaDeArchivos": "carpetaraiz"
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "AzureSqlTable1",
+									"type": "DatasetReference",
+									"parameters": {
+										"Tabla": "@concat(replace(item()['name'],'.parquet',''),'_NuevaTabla')",
+										"Esquema": "SalesLT"
+									}
+								}
+							]
 						}
 					]
 				}
