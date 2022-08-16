@@ -1,0 +1,9 @@
+{
+	"name": "miguelriquer",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2818afbc-61a6-4bad-9336-f1177a8ef147",
+		"tenantId": "54669b5c-85a4-419c-aaef-5ffd0ac6f5f6"
+	}
+}
