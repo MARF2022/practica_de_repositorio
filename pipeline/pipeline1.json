@@ -39,6 +39,8 @@
 									"storeSettings": {
 										"type": "AzureBlobFSReadSettings",
 										"recursive": true,
+										"wildcardFolderPath": "carpetaraiz",
+										"wildcardFileName": "@item()['name']",
 										"enablePartitionDiscovery": false
 									}
 								},
