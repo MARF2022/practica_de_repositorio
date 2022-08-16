@@ -66,12 +66,21 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"dataset": {
+						"referenceName": "Parquet1marf",
+						"type": "DatasetReference",
+						"parameters": {
+							"SistemaDeArchivos": "archivosexamen",
+							"RutaDeArchivos": "carpetaraiz"
+						}
+					},
 					"fieldList": [
 						"childItems"
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"recursive": true,
+						"modifiedDatetimeStart": "2022-08-16T00:00:00.411Z",
 						"enablePartitionDiscovery": false
 					}
 				}
