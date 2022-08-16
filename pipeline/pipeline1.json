@@ -47,36 +47,8 @@
 									"writeBehavior": "insert",
 									"sqlWriterUseTableLock": false
 								},
-								"enableStaging": false,
-								"translator": {
-									"type": "TabularTranslator",
-									"typeConversion": true,
-									"typeConversionSettings": {
-										"allowDataTruncation": true,
-										"treatBooleanAsNumber": false
-									}
-								}
-							},
-							"inputs": [
-								{
-									"referenceName": "Parquet1examenMARF",
-									"type": "DatasetReference",
-									"parameters": {
-										"SistemaDeArchivos": "container-name",
-										"RutaDeArchivos": "NuevosDatos"
-									}
-								}
-							],
-							"outputs": [
-								{
-									"referenceName": "MARFAzureSqlTable1",
-									"type": "DatasetReference",
-									"parameters": {
-										"tabla": "@{concat(replace( item()['name'], '.parquet',''), '_NuevaTabla')}",
-										"esquema": "SalesLT"
-									}
-								}
-							]
+								"enableStaging": false
+							}
 						}
 					]
 				}
@@ -94,14 +66,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "Parquet1examenMARF",
-						"type": "DatasetReference",
-						"parameters": {
-							"SistemaDeArchivos": "container-name",
-							"RutaDeArchivos": "NuevosDatos"
-						}
-					},
 					"fieldList": [
 						"childItems"
 					],
