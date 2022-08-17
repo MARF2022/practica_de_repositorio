@@ -7,18 +7,26 @@
 		},
 		"parameters": {
 			"Tabla": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": " "
 			},
 			"Esquema": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": " "
 			}
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "@dataset().Esquema",
-			"table": "@dataset().tabla"
+			"schema": {
+				"value": "@dataset().Esquema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tabla",
+				"type": "Expression"
+			}
 		}
 	}
 }
